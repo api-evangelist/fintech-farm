@@ -1,0 +1,92 @@
+generated: '2026-08-12'
+method: probed
+source: live GET probes of every Fintech Farm host known to this profile
+note: >-
+  Fintech Farm publishes exactly one well-known document: a real RFC 9116
+  security.txt on its corporate host. Every other well-known path 404s. The
+  partner-bank neobank brand hosts (leobank.az, liobank.vn, roarbank.in,
+  simbank.kg, tez.uz) were probed as leads and are recorded here for
+  completeness, but they are operated under the licensed partner bank's brand
+  and their 200s are SPA catch-alls, not documents — see
+  contract-discovery below.
+hosts:
+- host: www.fintech-farm.com
+  paths:
+  - path: /.well-known/security.txt
+    status: 200
+    content_type: text/plain
+    document: true
+    file: well-known/fintech-farm-security.txt
+  - path: /.well-known/openid-configuration
+    status: 404
+    document: false
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    document: false
+  - path: /.well-known/api-catalog
+    status: 404
+    document: false
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    document: false
+  - path: /.well-known/agent-card.json
+    status: 404
+    document: false
+  - path: /.well-known/agent.json
+    status: 404
+    document: false
+  - path: /llms.txt
+    status: 404
+    document: false
+  - path: /openapi.json
+    status: 404
+    document: false
+  - path: /sitemap.xml
+    status: 404
+    document: false
+  - path: /robots.txt
+    status: 200
+    content_type: text/plain
+    document: true
+    note: >-
+      Serves `Sitemap: https://leobank.az/sitemap.xml` — a cross-brand pointer
+      that shows the corporate site and the Azerbaijan neobank site are built
+      by the same web team from a shared template.
+contract-discovery:
+  note: >-
+    STEP 0b was run against every host below. No machine-readable API contract
+    of any kind was found on any of them.
+  probed:
+  - host: roarbank.in
+    finding: >-
+      /openapi.json and /.well-known/agent-card.json both return HTTP 200 with
+      a 114-byte HTML redirect stub to /lander. A nonsense control path returns
+      the identical 200 HTML. False positive — no spec, no agent card.
+  - host: simbank.kg
+    finding: >-
+      /openapi.json returns HTTP 200 but the body is a 212KB Next.js HTML
+      document; a nonsense control path returns the same shell. False positive.
+  - host: tez.uz
+    finding: >-
+      /openapi.json returns HTTP 200 with a Next.js HTML shell whose <html lang>
+      attribute is literally "openapi.json" — a catch-all echoing the path.
+      False positive.
+  - host: leobank.az
+    finding: /openapi.json and /.well-known/* return HTTP 500. No spec.
+  - host: liobank.vn
+    finding: /openapi.json returns HTTP 500; /.well-known/* 404. No spec.
+  - host: dev.fintech-farm.com
+    finding: >-
+      Resolves and answers HTTP 401 with `WWW-Authenticate: Basic realm="Login"`
+      behind CloudFront. A private, HTTP-Basic-gated environment; not probed
+      further and no credentials were used or attempted.
+  - host: api.fintech-farm.com
+    finding: NXDOMAIN. No API host exists on the corporate domain.
+  - host: developers.fintech-farm.com / portal.fintech-farm.com / docs.fintech-farm.com
+    finding: NXDOMAIN.
+  graphql: No /graphql surface exists on any Fintech Farm host.
+  mcp: No MCP endpoint published or advertised.
+  a2a: >-
+    No A2A agent card. Every 200 observed on a /.well-known/agent-card.json path
+    was an SPA catch-all serving HTML, which fails the JSON-object AgentCard
+    shape test. Per the pipeline contract no agent-card artifact was authored.

@@ -1,0 +1,44 @@
+# Fintech Farm
+
+> Fintech Farm is a London-based fintech company that builds and operates credit-led digital banks (neobanks) in emerging markets in partnership with licensed local banks. It is a business-to-business bank-partnership provider, not a self-serve API product, and it publishes no public developer program or machine-readable API contract.
+
+Fintech Farm supplies partner banks with an end-to-end stack: a consumer mobile banking app, an AI-driven credit engine and credit-risk models, data-driven customer acquisition and retention programs, and customer service operations. It is compensated on the performance of the resulting bank rather than on a published licence fee. The company was founded in 2020 by Dmytro Dubilet (co-founder of Monobank in Ukraine), Nick Bezkrovnyy and Oleksandr Vityaz, and is registered in England and Wales as FINTECH FARM LTD, company number 13278476.
+
+## Important note for agents
+
+Fintech Farm has **no public API**. There is no developer portal, no API reference, no OpenAPI or AsyncAPI definition, no GraphQL endpoint, no MCP server, and no A2A agent card on any host the company controls. Do not attempt to construct calls against a Fintech Farm API from this document — the integration surface is delivered privately to partner banks under contract. The only machine-readable document Fintech Farm publishes is an RFC 9116 `security.txt`.
+
+## Company
+
+- [Fintech Farm](https://www.fintech-farm.com/): Corporate site — what the company builds and the markets it operates in.
+- [Our Constitution](https://www.fintech-farm.com/constitution): The company's stated operating principles and culture.
+- [News](https://www.fintech-farm.com/news): Launch and milestone announcements. No RSS feed is published.
+- [Careers](https://www.fintech-farm.com/careers): Open roles. Contact hr@fintech-farm.com.
+- General contact: hello@fintech-farm.com
+
+## Security
+
+- [Security policy](https://www.fintech-farm.com/security): Coordinated vulnerability disclosure policy with safe harbor. Acknowledgement in 5 business days, initial assessment in 10, coordinated disclosure at 90 days. No bug bounty or monetary reward.
+- [security.txt](https://www.fintech-farm.com/.well-known/security.txt): RFC 9116, served as `text/plain`, expires 2027-06-13. Contact security@fintech-farm.com.
+- Disclosure scope explicitly includes "public APIs" and "SDKs and integration libraries", even though neither is publicly documented.
+
+## Neobanks operated with partner banks
+
+These are consumer banking brands owned and licensed by the partner bank, built and run on Fintech Farm's platform. They are separate legal products and their sites are not Fintech Farm API surfaces.
+
+- [Leobank](https://leobank.az/): Azerbaijan. 1M+ customers.
+- [Liobank](https://liobank.vn/): Vietnam. 1M+ customers.
+- [Simbank](https://simbank.kg/): Kyrgyzstan, with DosCredoBank. 400K customers.
+- [Roarbank](https://roarbank.in/): India, with Unity Bank.
+- [Tez](https://tez.uz/): Uzbekistan, with Hamkorbank (licensed by the Central Bank of Uzbekistan).
+- Credit+: Morocco.
+
+## Partnerships
+
+- Visa: partnership covering Central and Eastern Europe, the Middle East and Africa (announced July 2024).
+- Bank of Georgia Group: strategic investor (May 2024).
+
+## Optional
+
+- [FINTECH FARM LTD on Companies House](https://find-and-update.company-information.service.gov.uk/company/13278476): UK registration record.
+- [GitHub organization](https://github.com/Fintech-Farm-Ltd): Exists but publishes zero public repositories.

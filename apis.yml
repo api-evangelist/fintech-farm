@@ -1,23 +1,86 @@
 aid: fintech-farm
 name: Fintech Farm
-description: 'Fintech Farm is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Fintech Farm is a London-based fintech company that builds and operates
+  credit-led digital banks (neobanks) in emerging markets in partnership with licensed
+  local banks. Founded in 2020 by Dmytro Dubilet (co-founder of Monobank), Nick Bezkrovnyy
+  and Oleksandr Vityaz, the company supplies an end-to-end stack — mobile banking apps,
+  an AI-driven credit engine and credit-risk models, customer acquisition and retention
+  programs, and customer service operations — and is compensated on the performance
+  of the resulting bank. Its launches include Leobank in Azerbaijan, Liobank in Vietnam,
+  Simbank with DosCredoBank in Kyrgyzstan, Roarbank with Unity Bank in India, Tez with
+  Hamkorbank in Uzbekistan, and Credit+ in Morocco. Fintech Farm is a business-to-business
+  bank-partnership provider and publishes no public developer program, API documentation
+  or machine-readable API contract; its integration surface is delivered privately to
+  partner banks.'
 url: https://raw.githubusercontent.com/api-evangelist/fintech-farm/refs/heads/main/apis.yml
+image: https://fintech-farm.com/opengraph-image.jpg
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-12'
 modified: '2026-08-12'
 tags:
 - Company
+- Banking
+- Financial Services
+- Neobank
+- Digital Banking
+- Fintech
+- Credit
+- Emerging Markets
+- Banking as a Service
+- Mobile Banking
 apis: []
+x-enrichment:
+  date: '2026-08-12'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Fintech Farm sells bank partnerships, not API access — it builds and operates
+    a neobank jointly with a licensed local bank — so there is no developer
+    portal, no API reference and no API host at all: api.fintech-farm.com,
+    developers.fintech-farm.com and docs.fintech-farm.com are all NXDOMAIN, and
+    the only non-public surface, dev.fintech-farm.com, answers HTTP 401 behind
+    HTTP Basic auth.
+  evidence:
+  - url: https://www.fintech-farm.com/developers
+    status: 404
+  - url: https://www.fintech-farm.com/openapi.json
+    status: 404
+  - url: https://dev.fintech-farm.com/
+    status: 401
+  - url: https://www.fintech-farm.com/.well-known/security.txt
+    status: 200
+  checked: '2026-08-12'
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/fintech-farm-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/fintech-farm-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.fintech-farm.com/
+- type: Security
+  url: https://www.fintech-farm.com/security
+- type: Support
+  url: mailto:hello@fintech-farm.com
+- type: Blog
+  url: https://www.fintech-farm.com/news
+- type: GitHubOrganization
+  url: https://github.com/Fintech-Farm-Ltd
+- type: WellKnown
+  url: well-known/fintech-farm-well-known.yml
+- type: SecurityTxt
+  url: well-known/fintech-farm-security.txt
+- type: LLMsTxt
+  url: llms/fintech-farm-llms.txt
+- type: Plans
+  url: plans/fintech-farm-plans-pricing.yml

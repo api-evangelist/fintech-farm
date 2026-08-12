@@ -1,0 +1,12 @@
+# Fintech Farm — security.txt
+# Standard: RFC 9116
+# Deploy at: https://fintech-farm.com/.well-known/security.txt
+# Serve as: Content-Type: text/plain; charset=utf-8 over HTTPS
+# NOTE for web team: update the Expires date before it lapses (see deployment notes).
+
+Contact: mailto:security@fintech-farm.com
+Contact: https://fintech-farm.com/security
+Expires: 2027-06-13T23:59:59.000Z
+Preferred-Languages: en, uk, ru
+Canonical: https://fintech-farm.com/.well-known/security.txt
+Policy: https://fintech-farm.com/security

@@ -1,0 +1,27 @@
+generated: '2026-08-12'
+method: searched
+source: https://www.fintech-farm.com/
+plan_count: 0
+plans: []
+pricing_page: null
+note: >-
+  Fintech Farm publishes no pricing page and no plans or tiers. /pricing returns
+  HTTP 404 on the corporate host and no pricing surface exists anywhere on the
+  site. This is expected rather than a gap: Fintech Farm is not a self-serve API
+  product. It sells a bank partnership — it builds and operates a neobank jointly
+  with a licensed local bank and, per its own site, is compensated on a
+  performance basis tied to the resulting bank's results. Commercial terms are
+  negotiated per partnership and are not published.
+commercial_model:
+  type: partnership
+  self_serve: false
+  billing: performance-based
+  billing_note: >-
+    The company describes a performance-based compensation model on its
+    homepage. No rate card, revenue-share percentage or minimum is published.
+  contact: mailto:hello@fintech-farm.com
+evidence:
+- url: https://www.fintech-farm.com/pricing
+  status: 404
+- url: https://www.fintech-farm.com/
+  status: 200
