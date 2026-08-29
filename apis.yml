@@ -13,6 +13,17 @@ description: 'Fintech Farm is a London-based fintech company that builds and ope
   or machine-readable API contract; its integration surface is delivered privately to
   partner banks.'
 url: https://raw.githubusercontent.com/api-evangelist/fintech-farm/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://fintech-farm.com/opengraph-image.jpg
 x-type: company
 x-source: harvest:secondary-market
