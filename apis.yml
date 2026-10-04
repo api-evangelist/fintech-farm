@@ -45,7 +45,7 @@ modified: '2026-08-12'
 tags:
 - Company
 - Banking
-- Financial-Services
+- Financial Services
 - Neobank
 - Digital Banking
 - Fintech
@@ -64,6 +64,7 @@ tags_raw:
 - Emerging Markets
 - Banking as a Service
 - Mobile Banking
+- Financial-Services
 apis: []
 x-enrichment:
   date: '2026-08-12'
