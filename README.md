@@ -64,5 +64,89 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Fintech Farm is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Fintech Farm is a London-based fintech company that builds and operates credit-led digital banks (neobanks) in emerging markets in partnership with licensed local banks. Founded in 2020 by Dmytro Dubilet (co-founder of Monobank), Nick Bezkrovnyy and Oleksandr Vityaz, the company supplies an end-to-end stack — mobile banking apps, an AI-driven credit engine and credit-risk models, customer acquisition and retention programs, and customer service operations — and is compensated on the performance of the resulting bank. Its launches include Leobank in Azerbaijan, Liobank in Vietnam, Simbank with DosCredoBank in Kyrgyzstan, Roarbank with Unity Bank in India, Tez with Hamkorbank in Uzbekistan, and Credit+ in Morocco. Fintech Farm is a business-to-business bank-partnership provider and publishes no public developer program, API documentation or machine-readable API contract; its integration surface is delivered privately to partner banks.
+
+**Areas:** Company · Banking · Financial Services · Neobank · Digital Banking · Fintech · Credit · Emerging Markets · Banking as a Service · Mobile Banking
+
+## Fintech Farm on APIs.io
+
+Everything profiled for Fintech Farm is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/fintech-farm/](https://apis.io/providers/fintech-farm/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Fintech Farm Domain Security](https://apis.io/security/fintech-farm/fintech-farm-domain-security/)
+- [Fintech Farm Vulnerability Disclosure](https://apis.io/security/fintech-farm/fintech-farm-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Fintech Farm Plans Pricing](https://apis.io/plans/fintech-farm/fintech-farm-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.fintech-farm.com/)
+- [Blog](https://www.fintech-farm.com/news)
+- [Security](https://www.fintech-farm.com/security)
+- [GitHub](https://github.com/Fintech-Farm-Ltd)
+
+## API Evangelist rating
+
+**Kin Score 7.0** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.4** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/fintech-farm/](https://apis.io/providers/fintech-farm/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Fintech Farm: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/fintech-farm/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
